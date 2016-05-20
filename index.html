@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Another Angle - redécouvrez les joies du développement front-end (et JS) avec Angular</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>JS sous un nouvel Angle</h1>
+            <h3>redécouvrez les joies du développement front-end <br/>(et JS) avec Angular</h3>
+            <p>
+                <small>Créé par Noël Macé &amp; Sylvain Bigonneau</small>
+            </p>
+        </section>
+
+        <section data-background="images/disgusted.jpg">
+            <h1 style="margin-top: 500px">Vous avez dit JavaScript ?</h1>
+        </section>
+
+        <section data-background="images/Lost-interest.jpg">
+            <h1>Ce bon vieux web ...</h1>
+
+            <div class="mxgraph" style="display: inline-block; background-color: #FFF">
+                <svg style="min-width: 312px; min-height: 262px;">
+                    <g>
+                        <g></g>
+                        <g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="21" y="21" width="80" height="220" fill="#97d077" stroke="#82b366"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="211" y="21" width="80" height="220" fill="#7ea6e0" stroke="#666666"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 104 53 L 205.63 53" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 104 53 L 205.63 53" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 210.88 53 L 203.88 56.5 L 205.63 53 L 203.88 49.5 Z" fill="#000000"
+                                      stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 104 153 L 203.63 153" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 104 153 L 203.63 153" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 208.88 153 L 201.88 156.5 L 203.63 153 L 201.88 149.5 Z" fill="#000000"
+                                      stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="112" y="21" width="90" height="30" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="112" y="21" width="90" height="30" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(121,30)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="73"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 86px; width: 74px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                Initial request
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="112" y="61" width="97" height="30" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="112" y="61" width="97" height="30" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(116,70)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="90"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 93px; width: 91px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                HTML document
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="117" y="121" width="85" height="20" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="117" y="121" width="85" height="20" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(121,125)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="77"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 16px; max-width: 81px; width: 78px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                From Request
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 213 94 L 109.37 94" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 213 94 L 109.37 94" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 104.12 94 L 111.12 90.5 L 109.37 94 L 111.12 97.5 Z" fill="#000000"
+                                      stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="111" y="161" width="97" height="30" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="111" y="161" width="97" height="30" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(115,170)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="90"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 93px; width: 91px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                HTML document
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 215 201 L 111.06 201.16" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 215 201 L 111.06 201.16" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 105.81 201.17 L 112.8 197.66 L 111.06 201.16 L 112.81 204.66 Z"
+                                      fill="#000000" stroke="#000000" stroke-miterlimit="10"
+                                      pointer-events="all"></path>
+                            </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                    </g>
+                </svg>
+                <svg style="min-width: 222px; min-height: 172px;">
+                    <g>
+                        <g></g>
+                        <g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="21" y="21" width="180" height="60" fill="#ff9933" stroke="#6c8ebf"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g style="">
+                                <g transform="translate(90,42)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="42"
+                                                   height="19">
+                                        <div style="display: inline-block; font-size: 18px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 44px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                Page
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="21" y="91" width="180" height="60" fill="#ffff33" stroke="#000000"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g style="">
+                                <g transform="translate(57,112)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="108"
+                                                   height="19">
+                                        <div style="display: inline-block; font-size: 18px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 108px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                Web Browser
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section data-background="images/happy2.jpg">
+            <h1>... jusqu'à aujourd'hui</h1>
+            <p>SPA &amp; Extended web</p>
+            <div class="mxgraph" style="background-color: #FFF">
+                <svg style="min-width: 312px; min-height: 262px;">
+                    <g>
+                        <g></g>
+                        <g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="21" y="21" width="80" height="220" fill="#97d077" stroke="#82b366"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="211" y="21" width="80" height="220" fill="#7ea6e0" stroke="#666666"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 101 155 L 203.63 155" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 101 155 L 203.63 155" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 208.88 155 L 201.88 158.5 L 203.63 155 L 201.88 151.5 Z" fill="#000000"
+                                      stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="124" y="66" width="65" height="30" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="124" y="66" width="65" height="30" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(129,75)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="56"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 61px; width: 57px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                Document
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="136" y="161" width="40" height="30" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="136" y="161" width="40" height="30" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(140,170)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="32"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 36px; width: 33px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                JSON
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 213 101 L 111.37 101.94" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 213 101 L 111.37 101.94" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 106.12 101.99 L 113.09 98.42 L 111.37 101.94 L 113.15 105.42 Z"
+                                      fill="#000000" stroke="#000000" stroke-miterlimit="10"
+                                      pointer-events="all"></path>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 211 186 L 107.37 186" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 211 186 L 107.37 186" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 102.12 186 L 109.12 182.5 L 107.37 186 L 109.12 189.5 Z" fill="#000000"
+                                      stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="136" y="121" width="40" height="30" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="136" y="121" width="40" height="30" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(141,130)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="30"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 36px; width: 31px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                AJAX
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <path d="M 103 47 L 202.63 47" fill="none" stroke="white" stroke-miterlimit="10"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                                <path d="M 103 47 L 202.63 47" fill="none" stroke="#000000"
+                                      stroke-miterlimit="10"></path>
+                                <path d="M 207.88 47 L 200.88 50.5 L 202.63 47 L 200.88 43.5 Z" fill="#000000"
+                                      stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="113" y="21" width="87" height="30" fill="none" stroke="white"
+                                      pointer-events="stroke" visibility="hidden" stroke-width="9"></rect>
+                                <rect x="113" y="21" width="87" height="30" fill="none" stroke="none"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(120,30)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="73"
+                                                   height="12">
+                                        <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 83px; width: 74px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                initial request
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                    </g>
+                </svg>
+                <svg style="min-width: 222px; min-height: 242px;">
+                    <g>
+                        <g></g>
+                        <g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="21" y="21" width="180" height="60" fill="#ff9933" stroke="#6c8ebf"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(87,42)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="48"
+                                                   height="19">
+                                        <div style="display: inline-block; font-size: 18px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 48px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                Views
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="21" y="161" width="180" height="60" fill="#ffff33" stroke="#000000"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(57,171)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="108"
+                                                   height="40">
+                                        <div style="display: inline-block; font-size: 18px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 108px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                Modern<br>Web Browser
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                                <rect x="21" y="91" width="180" height="60" fill="#4d9900" stroke="#82b366"
+                                      pointer-events="all"></rect>
+                            </g>
+                            <g>
+                                <g transform="translate(94,112)">
+                                    <foreignObject style="overflow:visible;" pointer-events="all" width="34"
+                                                   height="19">
+                                        <div style="display: inline-block; font-size: 18px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 34px; white-space: normal; word-wrap: normal; text-align: center;">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                 style="display:inline-block;text-align:inherit;text-decoration:inherit;">
+                                                Libs
+                                            </div>
+                                        </div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section data-background="#E3E3E3">
+            <h1>Let's go !</h1>
+            <p>premier contact avec AngularJS</p>
+            <ul>
+                <li class="fragment">étendre l'HTML grâce aux directives</li>
+                <li class="fragment">un peu de 2 way data-binding ...</li>
+                <li class="fragment">un peu de logique avec les services</li>
+                <li class="fragment">faire un appel ajax</li>
+            </ul>
+        </section>
+
+        <section data-background="#E44D26">
+            <h1>Component Architecture</h1>
+            <img data-src="images/Tree.jpg"/>
+        </section>
+
+        <section data-transition="slide" data-background="#FBDE34" data-background-transition="zoom">
+            <h1>EcmaScript 2015</h1>
+            <p>class et arrow functions</p>
+        </section>
+
+        <section data-background="images/Import-Export.png">
+            <h1 style="background-color: #000">SystemJS</h1>
+        </section>
+
+        <section data-background="images/excited.gif">
+            <h1>Decorators</h1>
+        </section>
+
+        <section data-background="images/futur.gif">
+            <h1>et enfin ...</h1>
+            <p>TypeScript et Angular 2</p>
+        </section>
+
+        <section>
+            <h1>Et ce n'est que le début !</h1>
+            <p class="fragment">Nous n'avons pas pu évoquer :</p>
+                <ul>
+                    <li class="fragment">un grand nombre de fonctionnalités d'Angular, tels que les resources et router(s)</li>
+                    <li class="fragment">le grand nombre d'extensions à Angular</li>
+                    <li class="fragment">toutes les joies d'Angular 2</li>
+                    <li class="fragment">les Web Components, Shadow Dom, Progressive web apps, Polymer, etc ...</li>
+                 </ul>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
