@@ -6,6 +6,13 @@ Presentation of the AngularJS library and its evolutions by the Sedona JS Team.
 
 Available in [french](http://sedona-solutions.github.io/pres-another-angle/#/) and [english](http://sedona-solutions.github.io/pres-another-angle/index-en.html#/).
 
+A shorter presentation (expected to last approximately one hour) is available in the [1-first-contact](http://sedona-solutions.github.io/pres-another-angle/1-first-contact.html) file.
+
+Demonstration
+------
+
+This presentation rely on the [demo-another-angle](https://github.com/Sedona-Solutions/demo-another-angle) demonstration projet, also available on Github.
+
 Resources
 -----------
 
